@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shaznee.kayak.activities.AirlineDetailsActivity"
+    tools:showIn="@layout/activity_airline_details"
+    android:background="@color/colorBG">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageViewAirlineLogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_name"
+        android:id="@+id/textAirlineName"
+        android:layout_alignTop="@+id/imageViewAirlineLogo"
+        android:layout_toRightOf="@+id/imageViewAirlineLogo"
+        android:layout_toEndOf="@+id/imageViewAirlineLogo"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/label_airline_phone"
+        android:id="@+id/labelAirlinePhone"
+        android:layout_alignBottom="@+id/textAirlinePhoneNumber"
+        android:layout_alignLeft="@+id/textAirlinePhoneNumber"
+        android:layout_alignStart="@+id/textAirlinePhoneNumber"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_name"
+        android:id="@+id/textAirlinePhoneNumber"
+        android:layout_below="@+id/imageViewAirlineLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:autoLink="phone"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/label_airline_website"
+        android:id="@+id/labelAirlineWebsite"
+        android:layout_alignBottom="@+id/textAirlineWebsite"
+        android:layout_alignLeft="@+id/textAirlineWebsite"
+        android:layout_alignStart="@+id/textAirlineWebsite"
+        android:layout_marginBottom="28dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_name"
+        android:id="@+id/textAirlineWebsite"
+        android:layout_below="@+id/textAirlinePhoneNumber"
+        android:layout_alignLeft="@+id/textAirlinePhoneNumber"
+        android:layout_alignStart="@+id/textAirlinePhoneNumber"
+        android:layout_marginTop="130dp"
+        android:textSize="20sp"
+        android:autoLink="web" />
+
+
+</RelativeLayout>

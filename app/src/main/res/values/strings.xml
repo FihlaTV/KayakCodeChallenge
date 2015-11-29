@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kayak Code Challenge</string>
+    <string name="title_activity_airline_details">Airline Details</string>
+    <string name="no_network">\"No Network connections found\"</string>
+    <string name="title_airlines_tab">Airlines</string>
+    <string name="title_favorite_airlines_tab">Favorite Airlines</string>
+    <string name="empty_airlines_list">No Airlines to show</string>
+    <string name="label_airline_phone">Phone :</string>
+    <string name="label_airline_website">Website :</string>
+</resources>
